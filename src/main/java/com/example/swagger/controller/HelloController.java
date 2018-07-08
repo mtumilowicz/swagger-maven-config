@@ -17,13 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value="hello", description="Saying hello to everybody.")
 public class HelloController {
 
-    @ApiOperation(value = "Greeting message.", response = String.class)
+    @ApiOperation(value = "Greeting message.")
     @GetMapping("/")
     public String generic() {
         return "Greetings!";
     }
 
-    @ApiOperation(value = "Greeting message.", response = Greeting.class)
+    @ApiOperation(value = "Greeting message.")
     @PostMapping("/")
     public ResponseEntity<Greeting> personalised(@RequestBody String name) {
         Greeting greeting = new Greeting();
