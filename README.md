@@ -48,6 +48,7 @@ Swagger is an open source software framework that helps developers design, build
 		}
 		
 		private String host() {
+		// supported hosts in spring application properties
 			host = InetAddress.getLocalHost().getHostName();
 		}
 
