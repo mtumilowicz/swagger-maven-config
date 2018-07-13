@@ -17,9 +17,18 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
+    
+    private final SwaggerProperties swaggerProperties;
+
+    public SwaggerConfig(SwaggerProperties swaggerProperties) {
+        this.swaggerProperties = swaggerProperties;
+    }
+
+
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .enable(swaggerProperties.isEnabled())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.example.swagger.controller"))
                 .paths(PathSelectors.any())
