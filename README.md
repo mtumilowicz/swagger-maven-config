@@ -43,6 +43,16 @@ for consuming RESTful Web services)
 				
 * swagger ui will be available at: `root/swagger-ui.html#` (for example
     `root = http://localhost:8080`)
+    
+* steer swagger by properties flag:
+    * `application.properties`
+        `swagger.enabled = true`
+    * add `SwaggerProperties` class with `@ConfigurationProperties("swagger")`
+    * inject `SwaggerProperties` in `SwaggerConfig`, set flag in `Docket` 
+    builder:
+        ```
+        .enable(swaggerProperties.isEnabled())
+        ```
 		
 # details
 * `api` configuration using `Docket`
