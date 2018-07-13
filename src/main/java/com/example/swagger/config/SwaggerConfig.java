@@ -1,5 +1,6 @@
 package com.example.swagger.config;
 
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -16,14 +17,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
+@AllArgsConstructor
 public class SwaggerConfig {
     
     private final SwaggerProperties swaggerProperties;
-
-    public SwaggerConfig(SwaggerProperties swaggerProperties) {
-        this.swaggerProperties = swaggerProperties;
-    }
-
 
     @Bean
     public Docket api() {

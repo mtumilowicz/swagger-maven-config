@@ -5,6 +5,8 @@ import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+import javax.validation.constraints.NotBlank;
+
 /**
  * Created by mtumilowicz on 2018-07-13.
  */
@@ -13,5 +15,6 @@ import org.springframework.context.annotation.Configuration;
 @Getter
 @Setter
 public class SwaggerProperties {
+    @NotBlank
     private boolean enabled;
 }
