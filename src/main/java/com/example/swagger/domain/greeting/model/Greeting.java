@@ -1,14 +1,12 @@
 package com.example.swagger.domain.greeting.model;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 /**
  * Created by mtumilowicz on 2018-07-04.
  */
-@Getter
-@Setter
+@Data
 public class Greeting {
     private String message;
     

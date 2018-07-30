@@ -32,4 +32,10 @@ public class HelloController {
         return new ResponseEntity<>(greeting, HttpStatus.OK);
     }
 
+    @ApiOperation(value = "Test if controller is up.")
+    @GetMapping("/health")
+    public boolean health() {
+        return true;
+    }
+
 }
