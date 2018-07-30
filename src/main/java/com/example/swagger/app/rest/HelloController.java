@@ -1,6 +1,6 @@
-package com.example.swagger.controller;
+package com.example.swagger.app.rest;
 
-import com.example.swagger.api.Greeting;
+import com.example.swagger.domain.greeting.model.Greeting;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;

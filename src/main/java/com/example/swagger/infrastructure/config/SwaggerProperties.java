@@ -1,4 +1,4 @@
-package com.example.swagger.config;
+package com.example.swagger.infrastructure.config;
 
 import lombok.Getter;
 import lombok.Setter;
