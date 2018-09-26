@@ -13,7 +13,7 @@ import javax.validation.constraints.NotBlank;
 @Configuration
 @ConfigurationProperties("swagger")
 @Getter
-@Setter
+@Setter // otherwise exception during boot: Reason: No setter found for property: enabled
 public class SwaggerProperties {
     @NotBlank
     private boolean enabled;
