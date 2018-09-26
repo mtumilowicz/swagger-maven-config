@@ -38,7 +38,7 @@ for consuming RESTful Web services)
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				... cofig builder
+				... config builder
     ```
 				
 * swagger ui will be available at: `root/swagger-ui.html#` (for example
