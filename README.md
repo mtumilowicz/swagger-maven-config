@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/swagger.svg?branch=master)](https://travis-ci.com/mtumilowicz/swagger)
+
 # swagger292-maven-config
 The main goal of this project is to test basic features of Swagger and show
 how to configure it in the maven environment.
