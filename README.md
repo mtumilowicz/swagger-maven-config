@@ -1,5 +1,6 @@
-# swagger
-The main goal of this project is to test basic features of Swagger.
+# swagger292-maven-config
+The main goal of this project is to test basic features of Swagger and show
+how to configure it in the maven environment.
 
 # preface
 Swagger is an open source software framework that helps developers design, 
