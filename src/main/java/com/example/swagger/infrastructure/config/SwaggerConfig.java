@@ -27,7 +27,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(swaggerProperties.isEnabled())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.swagger.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.swagger.app.rest"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(metaData());
